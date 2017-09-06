@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Add New Product</h1>
+<form action="addproduct" method="post" enctype="multipart/form-data">
+<table>
+<tr><td>Item Name:</td><td><input type="text" name="itemname"/></td></tr>
+               <tr>
+                    <td>Select Image  </td>
+                    <td><input type="file"  name="productphoto" />
+                </tr>
+                
+<tr><td>Description:</td><td><input type="text" name="description"/></td></tr>
+<tr><td>Cost:</td><td><input type="text" name="cost"/></td></tr>
+<tr><td>Food Type:</td><td><input type="text" name="foodtype"/><td></tr>
+<tr><td>Availability</td><td>
+<select name="availability" style="width:150px">
+
+<option>Yes</option>
+<option>No</option>
+
+</select>
+</td></tr>
+<tr><td>Category:</td><td>
+<select name="category" style="width:150px">
+
+<option>Veg</option>
+<option>Non-Veg</option>
+</select>
+</td></tr>
+<tr><td>Discount:</td><td><input type="text" name="discount"/><td></tr>
+<tr><td colspan="2"><input type="submit" value="Add Product"/></td></tr>
+</table>
+</form>
+<br/>
+<a href="ViewProducts">view Products</a>
+
+</body>
+</html>
